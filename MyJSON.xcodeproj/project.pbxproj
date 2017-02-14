@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E8E270B5D987D0894F0744F /* Pods_MyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4F8EE5DCFE759296FB4114 /* Pods_MyJSON.framework */; };
+		CF4286D51E525CF400DDE28B /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF4286D41E525CF400DDE28B /* SwiftyJSON.framework */; };
+		CF4286D71E52621500DDE28B /* Data.json in Resources */ = {isa = PBXBuildFile; fileRef = CF4286D61E52621500DDE28B /* Data.json */; };
 		CFFDB42E1E52599B00163744 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFDB42D1E52599B00163744 /* AppDelegate.swift */; };
 		CFFDB4301E52599B00163744 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFFDB42F1E52599B00163744 /* ViewController.swift */; };
 		CFFDB4331E52599B00163744 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CFFDB4311E52599B00163744 /* Main.storyboard */; };
@@ -15,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		068ECAF7EFD5F90B51881174 /* Pods-MyJSON.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyJSON.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyJSON/Pods-MyJSON.debug.xcconfig"; sourceTree = "<group>"; };
+		CB4F8EE5DCFE759296FB4114 /* Pods_MyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF4286D41E525CF400DDE28B /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "../../../Library/Developer/Xcode/DerivedData/MyJSON-hdqcaqaxzmvvxtcvuifcfpeufzqk/Build/Products/Debug-iphonesimulator/SwiftyJSON/SwiftyJSON.framework"; sourceTree = "<group>"; };
+		CF4286D61E52621500DDE28B /* Data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Data.json; path = ../Data.json; sourceTree = "<group>"; };
 		CFFDB42A1E52599B00163744 /* MyJSON.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyJSON.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFFDB42D1E52599B00163744 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CFFDB42F1E52599B00163744 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +29,7 @@
 		CFFDB4341E52599B00163744 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CFFDB4371E52599B00163744 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CFFDB4391E52599B00163744 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2372EAA70633920994C1F2E /* Pods-MyJSON.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyJSON.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyJSON/Pods-MyJSON.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF4286D51E525CF400DDE28B /* SwiftyJSON.framework in Frameworks */,
+				3E8E270B5D987D0894F0744F /* Pods_MyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		60F8954E496652DEA2DF3463 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF4286D41E525CF400DDE28B /* SwiftyJSON.framework */,
+				CB4F8EE5DCFE759296FB4114 /* Pods_MyJSON.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AC6133FDA9351B12B87FED6D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				068ECAF7EFD5F90B51881174 /* Pods-MyJSON.debug.xcconfig */,
+				F2372EAA70633920994C1F2E /* Pods-MyJSON.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CFFDB4211E52599B00163744 = {
 			isa = PBXGroup;
 			children = (
 				CFFDB42C1E52599B00163744 /* MyJSON */,
 				CFFDB42B1E52599B00163744 /* Products */,
+				AC6133FDA9351B12B87FED6D /* Pods */,
+				60F8954E496652DEA2DF3463 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +84,7 @@
 		CFFDB42C1E52599B00163744 /* MyJSON */ = {
 			isa = PBXGroup;
 			children = (
+				CF4286D61E52621500DDE28B /* Data.json */,
 				CFFDB42D1E52599B00163744 /* AppDelegate.swift */,
 				CFFDB42F1E52599B00163744 /* ViewController.swift */,
 				CFFDB4311E52599B00163744 /* Main.storyboard */,
@@ -71,9 +102,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CFFDB43C1E52599B00163744 /* Build configuration list for PBXNativeTarget "MyJSON" */;
 			buildPhases = (
+				C1D2F0A454674A03BCA437D4 /* [CP] Check Pods Manifest.lock */,
 				CFFDB4261E52599B00163744 /* Sources */,
 				CFFDB4271E52599B00163744 /* Frameworks */,
 				CFFDB4281E52599B00163744 /* Resources */,
+				E9C0FC3F6D4EEB70E5D3635E /* [CP] Embed Pods Frameworks */,
+				38DCC6A456929EC3C5C31091 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -127,10 +161,59 @@
 				CFFDB4381E52599B00163744 /* LaunchScreen.storyboard in Resources */,
 				CFFDB4351E52599B00163744 /* Assets.xcassets in Resources */,
 				CFFDB4331E52599B00163744 /* Main.storyboard in Resources */,
+				CF4286D71E52621500DDE28B /* Data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		38DCC6A456929EC3C5C31091 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyJSON/Pods-MyJSON-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1D2F0A454674A03BCA437D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E9C0FC3F6D4EEB70E5D3635E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyJSON/Pods-MyJSON-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CFFDB4261E52599B00163744 /* Sources */ = {
@@ -259,6 +342,7 @@
 		};
 		CFFDB43D1E52599B00163744 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 068ECAF7EFD5F90B51881174 /* Pods-MyJSON.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XQW53V53S6;
@@ -272,6 +356,7 @@
 		};
 		CFFDB43E1E52599B00163744 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2372EAA70633920994C1F2E /* Pods-MyJSON.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = XQW53V53S6;
@@ -302,6 +387,7 @@
 				CFFDB43E1E52599B00163744 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
